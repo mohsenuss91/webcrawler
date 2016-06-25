@@ -13,5 +13,5 @@ pip install -r requirements.txt
 
 ##To do
 * Get links from html to crawl them recursively
-* Read websites from DB
 * Adding Algerian universities official websites to data/algerian_univ.txt
+* Read websites from DB
