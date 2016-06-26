@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 try:
     # For Python 3.0 and later
@@ -7,7 +8,7 @@ except ImportError:
     from urllib2 import urlopen, Request
 import re
 
-def read_urls_from_file(fname):
+def read_urls_from_file(fname): #reading lines from a file
 	with open(fname) as f:
 		return f.readlines()
 
@@ -39,7 +40,7 @@ def main():
 		if urlregex(url):		
 			url=url.replace("http://www.", "http://")
 			url=url.replace("www.", "http://www.")			
-			print("Reading [%s]" % url)
+			print("\nReading [%s]" % url)
 			req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 			response = urlopen(req)
 			page_source = response.read()
