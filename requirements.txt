@@ -4,7 +4,7 @@ Jinja2==2.8
 SQLAlchemy==0.8.4
 Werkzeug==0.15.3
 decorator==4.0.9
-html5lib==0.999
+html5lib==0.99999999
 httplib2==0.8
 requests==2.2.1
 urllib3==1.24.2
